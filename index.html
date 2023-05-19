@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>L & J Studio</title>
+<title>L & J Studio & Gallery</title>
 <link rel='shortcut icon' href='' />
 <style>
 body{
@@ -58,6 +58,19 @@ p{
 .lj_p_title{
   text-align:left; color:#858585; font-size:16px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;
 }
+
+.widget-1{
+  padding-left:48px !important;
+  padding-right: 48px !important;
+  b1ackground-color: pink !important;
+}
+#ulpb_Row29640{
+  background-color:black !important;
+}
+#ulpb_Row130227{
+  background-color:rgb(20, 20, 20) !important; 
+}
+
 </style>
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="object" />
@@ -70,6 +83,9 @@ p{
 </head>
 
 <body class='ulpb_PageBody ulpb_PageBody_948'>
+<script src="https://pchen66.github.io/panolens.js/js/three/three.min.js"></script>
+<script src="https://pchen66.github.io/panolens.js/js/panolens/panolens.min.js"></script>
+
 <div id='fullPageBgOverlay_948' class='fullPageBgOverlay' style='height: 100%; top: 0 !important; bottom:0 !important; left: 0 !important; right:0 !important;  width: 100%; position: fixed;'></div>
     
 <div class='pops-row w3-row   pops-row-0' data-row_id='ulpb_Row146153' id='ulpb_Row146153'>
@@ -89,12 +105,12 @@ p{
       </div>  
       <div class='widget-3   '  id='widget-3-column1-ulpb_Row146153'  >
         <div class='wdt-wigt-btn-gen parent-btn-576408' style='text-align:center;margin:0 0 2px 0; padding:0;' >
-          <a href="demo.html"><button class='btn-576408 btnLink-' style="color:#141414 ;font-size:17px ; background: #02c873 ; background-color: #02c873;  color:white;padding: 17px 5px; width:170px;  border: 1px solid #02c873 !important; border-radius: 4px !important; text-align:center; font-family:Lexend Deca ,sans-serif;"  >Demo</button></a>
+          <a href="#a_demo"><button class='btn-576408 btnLink-' style="color:#141414 ;font-size:17px ; background: #02c873 ; background-color: #02c873;  color:white;padding: 17px 5px; width:170px;  border: 1px solid #02c873 !important; border-radius: 4px !important; text-align:center; font-family:Lexend Deca ,sans-serif;"  >Demo</button></a>
         </div> 
       </div>  
       <div class='widget-4   '  id='widget-4-column1-ulpb_Row146153'  >
         <div class='wdt-wigt-btn-gen parent-btn-247936' style='text-align:center;margin:0 0 2px 0; padding:0;' >
-          <a href='#a_package'><button class='btn-247936 btnLink-' style="color:#ffffff ;font-size:17px ; background: rgb(231, 111, 81) ; background-color: rgb(231, 111, 81);  padding: 17px 5px; width:190px;  border: 1px solid rgb(244, 162, 97) !important; border-radius: 4px !important; text-align:center; font-family:Lexend Deca ,sans-serif;"  >Packages</button></a>
+          <a href='#a_package'><button class='btn-247936 btnLink-' style="color:#ffffff ;font-size:17px ; background: rgb(231, 111, 81) ; background-color: rgb(231, 111, 81);  padding: 17px 5px; width:190px;  border: 1px solid rgb(244, 162, 97) !important; border-radius: 4px !important; text-align:center; font-family:Lexend Deca ,sans-serif;"  >Service</button></a>
         </div>   
       </div>  
     </div><!-- ulpb_Row146153-column1-->
@@ -107,11 +123,25 @@ p{
   <div class="rowColumnsContainer" id="rowColCont-ulpb_Row130227" style="margin:0 auto !important; max-width:100% !important;">
     <div id='ulpb_Row130227-column1' class='pops-column pb-col-1  '> 
       <div class='widget-0   '  id='widget-0-column1-ulpb_Row130227'  >
-        <h2 class="lj_h2">A Virtual Exhibition Hosting Platform for Any Showcase</h2>
+        <h2 class="lj_h2">A Virtual Exhibition Hosting Service for Any Showcase</h2>
       </div><br/>
       <div class='widget-1   '  id='widget-1-column1-ulpb_Row130227'  >
         <p class="lj_p">Virtual exhibitions are the best way to showcase all you have.</p>
         <p class="lj_p">There are numerous benefits that companies, brands, exhibitors, and people from different spheres of life can squeeze out of a virtual exhibition.</p>
+        <p class="lj_p">Check out this demo of a virtual exhibition in Second Life.</p>
+        <p class="lj_p"><br/></p>
+        <a name="a_demo"></a>
+        <div id="div_panorama" style="width:50%;min-height:512px;margin:auto;"></div>
+        <div style="clear:both;"></div>
+        <p class="lj_p" style="font-style: italic;color:gray;">Use your mouse to drag and zoom</p>
+<script>
+const panorama = new PANOLENS.ImagePanorama('https://atocha.io/wp-content/3rd/sl360_Morton_Mains_4096x2048_1017_20230512_103908.jpg');
+const viewer = new PANOLENS.Viewer({
+  container: document.querySelector("#div_panorama")
+});
+viewer.add(panorama);
+</script>
+
       </div>  
     </div><!--ulpb_Row130227-column1-->
   </div><!--rowColCont-ulpb_Row130227-->
@@ -124,17 +154,18 @@ p{
     <div id='ulpb_Row29640-column1' class='pops-column pb-col-1  '> 
       <div class='widget-0   '  id='widget-0-column1-ulpb_Row29640'  >
         <a name="a_about"></a>
-        <h2 class="lj_h2">About us</h2>
-      </div><br/>
-      <div class='widget-1   '  id='widget-1-column1-ulpb_Row29640'  >
-        <div>
-          <p class="lj_p">Established on 2012 by Lisi and Janne, L & J Studio & Gallery is a creative space in Second Life, a vast 3D-generated virtual world and platform filled with user-generated content where people can interact with each other in real-time. In addition to create 3D avatars and 3D buildings, L & J also hosts regular art exhibitions and events, showcasing the work of local and regional artists. The gallery features a diverse range of art styles and mediums, including painting, drawing, sculpture, and mixed media.</p>
+        <h2 class="lj_h2">About Us</h2>
+      </div>
+      <div class='widget-1'  id='widget-1-column1-ulpb_Row29640'  >
+          <p class="lj_p"><br/></p>
+          <p class="lj_p">Established on 2012 by Lisi and Janne, L & J Studio & Gallery is a creative space in Second Life, a vast 3D-generated virtual world and platform filled with user-generated content where people can interact with each other in real-time. </p>
+          <p class="lj_p">In addition to create 3D avatars and 3D buildings, L & J also hosts regular art exhibitions and events, showcasing the work of local and regional artists. The gallery features a diverse range of art styles and mediums, including painting, drawing, sculpture, and mixed media.</p>
           <p class="lj_p">Whether you are looking to develop your artistic skills, meet other artists, or simply appreciate the beauty of art, L & J Gallery is a great place to visit.</p>
           <p class="lj_p">How to visit L & J Studio & Gallery and explore a virtual exhibition in Second Life?</p>
           <p class="lj_p">STEP1: Register a free Second Life account: <a href="https://join.secondlife.com/">https://join.secondlife.com/</a></p>
           <p class="lj_p">STEP2: Download and install the latest Second Life Viewer: <a href="https://secondlife.com/support/downloads/">https://secondlife.com/support/downloads/</a></p>
           <p class="lj_p">STEP3: Run the viewer, login and teleport tp L & J Studio & Gallery: <a href="secondlife://Morton Mains/145/215/95">secondlife://Morton Mains/145/215/95</a></p>
-        </div>
+        
       </div>
       <div class='widget-2   '  id='widget-2-column1-ulpb_Row29640'  >
         <div id='pb_img457942' style='text-align:center; position:relative;'> 
@@ -158,10 +189,10 @@ p{
     <div id='ulpb_Row65625-column1' class='pops-column pb-col-1  '> 
       <div class='widget-0   '  id='widget-0-column1-ulpb_Row65625'  >
         <a name="a_designer"></a>
-        <h2 class="lj_h2"> Meet our designers </h2>
+        <h2 class="lj_h2"> Meet Our Core Creative Team</h2>
       </div><br/>
-      <div class='widget-1   '  id='widget-1-column1-ulpb_Row65625'  >
-        <p class="lj_p">Say hello to Lisi, Janne and Loriss, </p>
+      <div class='widget-1'  id='widget-1-column1-ulpb_Row65625'  >
+        <p class="lj_p">Say hello to Lisi, Janne and Loriss</p>
         <p class="lj_p">Every L & J designer is unique, but they have one thing in common: they love helping customers create their dreams.</p>
       </div>
     </div><!--ulpb_Row65625-column1-->
@@ -183,7 +214,7 @@ p{
                   box-shadow: px  px  px  ;
                  ' class='ftr-img-column1 img-custom'>
           <div class="img-caption-pb_img778708 img-caption" class="lj_div_head">
-            <div class="img-caption-inner" style="text-align:center;padding:5% 3%;color:white;">Janne</div>
+            <div class="img-caption-inner" style="text-align:center;padding:5% 3%;color:white;">Janne: 3D designer</div>
           </div>
         </div>
       </div>  
@@ -199,7 +230,7 @@ p{
                   box-shadow: px  px  px  ;
                  ' class='ftr-img-column2 img-custom'>
           <div class="img-caption-pb_img419796 img-caption" class="lj_div_head">
-            <div class="img-caption-inner" style="text-align:center;padding:5% 3%;color:white;">Lisi</div>
+            <div class="img-caption-inner" style="text-align:center;padding:5% 3%;color:white;">Lisi: LSL programmer</div>
           </div>
         </div>
       </div>  
@@ -215,7 +246,7 @@ p{
                   box-shadow: px  px  px  ;
                  ' class='ftr-img-column3 img-custom'>
           <div class="img-caption-pb_img96068 img-caption" class="lj_div_head">
-            <div class="img-caption-inner" style="text-align:center;padding:5% 3%;color:white;">Loriss</div>
+            <div class="img-caption-inner" style="text-align:center;padding:5% 3%;color:white;">Loriss: Marketing manager</div>
           </div>
         </div>
       </div>  
@@ -225,7 +256,7 @@ p{
 
 <div class='pops-row w3-row   pops-row-5' data-row_id='ulpb_Row155596' id='ulpb_Row155596'>
   <div class="overlay-row" style=""></div>
-  <div class="rowColumnsContainer" id="rowColCont-ulpb_Row155596" style="margin:0 auto !important; max-width:1100px !important;">
+  <div class="rowColumnsContainer" id="rowColCont-ulpb_Row155596" style="margin:0 auto !important; max-width:100% !important;">
     <div id='ulpb_Row155596-column1' class='pops-column pb-col-1  '>
       <div class='widget-0   '  id='widget-0-column1-ulpb_Row155596'  >
         <div class='iconContainerDiv iconContainer-604572 ' style='text-align:center; display:flex; align-items:center; justify-content:center; '  >
@@ -243,205 +274,36 @@ p{
 <div class='pops-row w3-row   pops-row-6' data-row_id='ulpb_Row149514' id='ulpb_Row149514'>
   <div class="overlay-row" style=""></div>
   <div class="rowColumnsContainer" id="rowColCont-ulpb_Row149514" style="margin:0 auto !important; max-width:100% !important;">
-    <div id='ulpb_Row149514-column1' class='pops-column pb-col-1  '> 
+    <div id='ulpb_Row149514-column1' class='pops-column pb-col-1  ' style="margin-bottom:80px;"> 
       <div class='widget-0   '  id='widget-0-column1-ulpb_Row149514'  >
         <a name="a_package"></a>
-        <h2 class="lj_h2"> Services & prices </h2>
-      </div><br/>
+        <h2 class="lj_h2">Service</h2>
+      </div>
+      <div class='widget-1   '  id='widget-1-column1-ulpb_Row155596aaa'  >
+        <div style="text-align:center;color:white;">
+<p class="lj_p"><br/></p>          
+<p class="lj_p" style="color:gray;font-style: italic;">For every virtual exhibition in Second Life, the customer will get the following:</p>
+<p class="lj_p"><br/></p>
+<p class="lj_p">1 week virtual exhibition at our inworld gallery.</p>
+<p class="lj_p">20+ high resolution photos of the exhibition.</p>
+<p class="lj_p">A 360 panorama photo with javascript code for embedding in your website or facebook pages.</p>
+<p class="lj_p">Advertisement of the exhibition on 100+ Second Life business locations.</p>
+<p class="lj_p">Press release on our website and our partners' network with 5+ business and art websites.</p>       
+<p class="lj_p"><br/></p>
+<p class="lj_p" style="color:gray;font-style: italic;"> We accept USD/CRYPTO/L$ </p>   
+<p class="lj_p"><br/></p>
+<p class="lj_p"><a href="#a_contact">Contact us for price and more</a></p>
+        </div>
+      </div>       
     </div><!--ulpb_Row149514-column1-->
   </div><!--rowColCont-ulpb_Row149514-->
 </div><!--ulpb_Row149514-->
   	
-<div class='pops-row w3-row   pops-row-7' data-row_id='ulpb_Row35788' id='ulpb_Row35788'>
-  <div class="overlay-row" style=""></div>
-  <div class="rowColumnsContainer" id="rowColCont-ulpb_Row35788" style="margin:0 auto !important; max-width:1280px !important;">
-    <div id='ulpb_Row35788-column1' class='pops-column pb-col-4  '> 
-      <div class='widget-0   '  id='widget-0-column1-ulpb_Row35788'  >
-        <div class="lj_p_title" >
-          <p class="lj_p_title"> Package </p>
-        </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row35788-column2' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column2-ulpb_Row35788'  ><div class="lj_p_title" ><p class="lj_p_title"> Features </p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row35788-column3' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column3-ulpb_Row35788'  ><div class="lj_p_title" ><p class="lj_p_title"> Price </p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row35788-column4' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column4-ulpb_Row35788'  ><div style="height:5px ;"></div></div>  
- </div> <!-- Column ends!-->
-            </div>
-      
-  	</div>
+
   	
-    <script type="text/javascript">
-          </script>
-  	<div class='pops-row w3-row   pops-row-8' data-row_id='ulpb_Row170686' id='ulpb_Row170686'>
-      <div class="overlay-row" style=""></div>
 
-      
-      
 
-        
-              
-      <div class="rowColumnsContainer" id="rowColCont-ulpb_Row170686" style="margin:0 auto !important; max-width:1280px !important;">
-  	   
-           
-      <div id='ulpb_Row170686-column1' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column1-ulpb_Row170686'  ><div style="text-align:left; color:#ffffff; font-size:18px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:#ffffff; font-size:18px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"> All-in-one </p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row170686-column2' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column2-ulpb_Row170686'  ><div style="text-align:left; color:#ffffff; font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:#ffffff; font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"> Inworld exhibition/Press release on our website and partners' network </p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row170686-column3' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column3-ulpb_Row170686'  ><div style="text-align:left; color:#ffffff; font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:#ffffff; font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"><a href="#a_contact">Request</a></p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row170686-column4' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column4-ulpb_Row170686'  ><div style=" padding:5px 0; text-align: center ; "> <span style=" border-top:1px  solid   #eaeaea; width:100%; display:inline-block; line-height:0;" ></span> </div></div>  
- </div> <!-- Column ends!-->
-            </div>
-      
-  	</div>
-  	
-    <script type="text/javascript">
-          </script>
-  	<div class='pops-row w3-row   pops-row-9' data-row_id='ulpb_Row21555' id='ulpb_Row21555'>
-      <div class="overlay-row" style=""></div>
 
-      
-      
-
-        
-              
-      <div class="rowColumnsContainer" id="rowColCont-ulpb_Row21555" style="margin:0 auto !important; max-width:1280px !important;">
-  	   
-           
-      <div id='ulpb_Row21555-column1' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column1-ulpb_Row21555'  ><div style="text-align:left; color:#ffffff; font-size:18px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:#ffffff; font-size:18px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"> Inworld only </p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row21555-column2' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column2-ulpb_Row21555'  ><div style="text-align:left; color:#ffffff; font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:#ffffff; font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"> Inworld exhibition only </p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row21555-column3' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column3-ulpb_Row21555'  ><div style="text-align:left; color:rgb(255, 255, 255); font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:rgb(255, 255, 255); font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"><a href="#a_contact">Request</a></p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row21555-column4' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column4-ulpb_Row21555'  ><div style=" padding:5px 0; text-align: center ; "> <span style=" border-top:1px  solid   #eaeaea; width:100%; display:inline-block; line-height:0;" ></span> </div></div>  
- </div> <!-- Column ends!-->
-            </div>
-      
-  	</div>
-  	
-    <script type="text/javascript">
-          </script>
-  	<div class='pops-row w3-row   pops-row-10' data-row_id='ulpb_Row94955' id='ulpb_Row94955'>
-      <div class="overlay-row" style=""></div>
-
-      
-      
-
-        
-              
-      <div class="rowColumnsContainer" id="rowColCont-ulpb_Row94955" style="margin:0 auto !important; max-width:1280px !important;">
-  	   
-           
-      <div id='ulpb_Row94955-column1' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column1-ulpb_Row94955'  ><div style="text-align:left; color:#ffffff; font-size:18px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:#ffffff; font-size:18px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"> PR on network </p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row94955-column2' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column2-ulpb_Row94955'  ><div style="text-align:left; color:#ffffff; font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:#ffffff; font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"> Press release on our website and partners' network </p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row94955-column3' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column3-ulpb_Row94955'  ><div style="text-align:left; color:rgb(255, 255, 255); font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:rgb(255, 255, 255); font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"><a href="#a_contact">Request</a></p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row94955-column4' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column4-ulpb_Row94955'  ><div style=" padding:5px 0; text-align: center ; "> <span style=" border-top:1px  solid   #eaeaea; width:100%; display:inline-block; line-height:0;" ></span> </div></div>  
- </div> <!-- Column ends!-->
-            </div>
-      
-  	</div>
-  	
-    <script type="text/javascript">
-          </script>
-  	<div class='pops-row w3-row   pops-row-11' data-row_id='ulpb_Row103593' id='ulpb_Row103593'>
-      <div class="overlay-row" style=""></div>
-
-      
-      
-
-        
-              
-      <div class="rowColumnsContainer" id="rowColCont-ulpb_Row103593" style="margin:0 auto !important; max-width:1280px !important;">
-  	   
-           
-      <div id='ulpb_Row103593-column1' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column1-ulpb_Row103593'  ><div style="text-align:left; color:#ffffff; font-size:18px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:#ffffff; font-size:18px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"> PR on our website only </p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row103593-column2' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column2-ulpb_Row103593'  ><div style="text-align:left; color:#ffffff; font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:#ffffff; font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"> Press release on our website only </p> </div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row103593-column3' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column3-ulpb_Row103593'  ><div style="text-align:left; color:rgb(255, 255, 255); font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" ><p style="text-align:left; color:rgb(255, 255, 255); font-size:17px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"><a href="#a_contact">Request</a></p></div></div>  
- </div> <!-- Column ends!-->
-      
-           
-      <div id='ulpb_Row103593-column4' class='pops-column pb-col-4  '> 
-<div class='widget-0   '  id='widget-0-column4-ulpb_Row103593'  ><div style=" padding:5px 0; text-align: center ; "> <span style=" border-top:1px  solid   #eaeaea; width:100%; display:inline-block; line-height:0;" ></span> </div></div>  
- </div> <!-- Column ends!-->
-            </div>
-      
-  	</div>
-  	
-    <script type="text/javascript">
-          </script>
-  	<div class='pops-row w3-row   pops-row-12' data-row_id='ulpb_Row81864' id='ulpb_Row81864'>
-      <div class="overlay-row" style=""></div>
-
-      
-      
-
-        
-              
-      <div class="rowColumnsContainer" id="rowColCont-ulpb_Row81864" style="margin:0 auto !important; max-width:100% !important;">
-  	   
-           
-      <div id='ulpb_Row81864-column1' class='pops-column pb-col-1  '> 
-<div class='widget-0   '  id='widget-0-column1-ulpb_Row81864'  ><p style="text-align:center; color:rgb(231, 111, 81); font-size:px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"> We accept USD/CRYPTO/L$ </p> </div>  
- </div> <!-- Column ends!-->
-            </div>
-      
-  	</div>
-  	
-    <script type="text/javascript">
-          </script>
   	<div class='pops-row w3-row   pops-row-13' data-row_id='ulpb_Row87525' id='ulpb_Row87525'>
       <div class="overlay-row" style=""></div>
 
@@ -454,7 +316,7 @@ p{
   	   
            
       <div id='ulpb_Row87525-column1' class='pops-column pb-col-1  '> 
-<div class='widget-0   '  id='widget-0-column1-ulpb_Row87525'  ><h2 style="text-align:center; color:#ffffff; font-size:40px; font-weight:900; text-transform:none;  font-family:Lexend Deca, sans-serif; font-weight:bold; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;"> See what our customer say </h2> </div>  
+<div class='widget-0   '  id='widget-0-column1-ulpb_Row87525'  ><h2 class="lj_h2">See What Our Customer Say </h2> </div>  
  </div> <!-- Column ends!-->
             </div>
       
@@ -547,7 +409,7 @@ p{
         </div> <!-- Column ends!-->
         <div id='ulpb_Row45171-column2' class='pops-column pb-col-2  '>
           <div class='widget-0   '  id='widget-0-column2-ulpb_Row45171'  >
-            <a name="a_contact"></a><h2 style="text-align:center; color:#ffffff; font-size:40px; font-weight:900; text-transform:none;  font-family:Lexend Deca, sans-serif; font-weight:bold; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;">Request a quote/Contact us</h2>
+            <a name="a_contact"></a><h2 class="lj_h2">Request a quote/Contact Us</h2>
           </div>
           <div class='widget-1   '  id='widget-1-column2-ulpb_Row45171'  >
             <div style="text-align:center; color:#ffffff; font-size:16px; font-weight:normal; text-transform:;  font-family:Lexend Deca, sans-serif; font-weight:; font-style:;  text-decoration:; line-height:em;  letter-spacing:px;" >
@@ -626,10 +488,10 @@ p{
           <div class='navNlogoContainer' style='align-items: center; display: flex; justify-content: left; '></div>
           <div  class='menuItemListContainer'>
             <ul id='ul_pb_navMenu_91140' style='list-style:none;'>
-              <li> <a href="demo.html" style="color:white !important;" >Demo</a></li>
+              <li> <a href="#a_demo" style="color:white !important;" >Demo</a></li>
               <li> <a href="#a_about" style="color:white !important;" >About</a></li>
-              <li> <a href="#a_package" style="color:white !important;" >Packages</a> </li>
-              <li> <a href="#a_designer" style="color:white !important;" >Designers</a> </li>
+              <li> <a href="#a_designer" style="color:white !important;" >Team</a></li>
+              <li> <a href="#a_package" style="color:white !important;" >Service</a></li>
               <li> <a href="#a_contact" style="color:white !important;" >Contact</a> </li>
             </ul>
           </div>
@@ -754,7 +616,7 @@ p{
     <div id='ulpb_Row106514-column2' class='pops-column pb-col-2  ' style="">
       <div class='widget-0   '  id='widget-0-column2-ulpb_Row106514'  >
         <div>
-          <p class=" " style="text-align: right; color: rgba(255, 255, 255, 0.55); font-size: 20px;">© 2023 L &amp; J Studio&nbsp;| All Rights Reserved</p>  
+          <p class=" " style="text-align: right; color: rgba(255, 255, 255, 0.55); font-size: 20px;">© 2023 L & J Studio & Gallery&nbsp;| All Rights Reserved</p>  
         </div>
       </div>  
     </div><!--ulpb_Row106514-column2-->
